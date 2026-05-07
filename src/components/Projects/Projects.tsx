@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ExternalLink, Info, Globe } from 'lucide-react';
+import { Info, Globe } from 'lucide-react';
 import { FaGithub, FaApple, FaGooglePlay } from 'react-icons/fa6';
 
 import { projects } from '../../data/content';

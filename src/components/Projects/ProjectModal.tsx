@@ -42,7 +42,7 @@ interface ProjectModalProps {
 }
 
 export default function ProjectModal({ project, onClose }: ProjectModalProps) {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const lang = i18n.language === 'tr' ? 'tr' : 'en';
   const modalRef = useRef<HTMLDivElement>(null);
 
