@@ -147,8 +147,8 @@ export const experiences: Experience[] = [
 ];
 
 export const education = {
-  schoolTR: 'İstanbul Teknik Üniversitesi',
-  schoolEN: 'Istanbul Technical University',
+  schoolTR: 'Medipol Üniversitesi',
+  schoolEN: 'Medipol University',
   departmentTR: 'Bilgisayar Mühendisliği',
   departmentEN: 'Computer Engineering',
   period: '2022 — 2024',
