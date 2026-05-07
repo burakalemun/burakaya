@@ -16,7 +16,7 @@ export const personal: PersonalInfo = {
   name: 'Burak Kaya',
   avatar: '/avatar.jpg',
   location: 'İstanbul, Türkiye',
-  email: 'burakkaya.dev@gmail.com',
+  email: 'kayaaaburak11@gmail.com',
   github: 'https://github.com/burakalemun',
   linkedin: 'https://linkedin.com/in/burak-kaya',
   instagram: 'https://instagram.com/burakalemun',
