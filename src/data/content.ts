@@ -14,7 +14,7 @@ export interface PersonalInfo {
 
 export const personal: PersonalInfo = {
   name: 'Burak Kaya',
-  avatar: '/avatar.png',
+  avatar: '/avatar.jpg',
   location: 'İstanbul, Türkiye',
   email: 'burakkaya.dev@gmail.com',
   github: 'https://github.com/burakalemun',
