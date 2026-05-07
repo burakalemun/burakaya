@@ -56,9 +56,8 @@
 
 .hero__avatar-wrapper {
   position: relative;
-  width: 260px;
-  height: auto;
-  aspect-ratio: 9 / 16;
+  width: 350px;
+  aspect-ratio: 1 / 1;
   border-radius: 30px;
   padding: 10px;
   background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
@@ -92,9 +91,8 @@
     text-align: center;
   }
   .hero__avatar-wrapper {
-    width: 200px;
-    height: auto;
-    aspect-ratio: 9 / 16;
+    width: 280px;
+    aspect-ratio: 1 / 1;
   }
   .hero__ctas, .hero__socials {
     justify-content: center;
