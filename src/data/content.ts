@@ -151,7 +151,7 @@ export const education = {
   schoolEN: 'Istanbul Technical University',
   departmentTR: 'Bilgisayar Mühendisliği',
   departmentEN: 'Computer Engineering',
-  period: '2018 — 2022',
+  period: '2022 — 2024',
 };
 
 export interface Project {
