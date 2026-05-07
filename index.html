@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burak Kaya | iOS Developer</title>
+    <script>
+      let titleText = "Burak Kaya | iOS Developer | Portfolio | ";
+      let scrollInterval = null;
+
+      function startScrolling() {
+        if (scrollInterval) return;
+        scrollInterval = setInterval(() => {
+          titleText = titleText.substring(1) + titleText.substring(0, 1);
+          document.title = titleText;
+        }, 300);
+      }
+
+      function stopScrolling(msg) {
+        clearInterval(scrollInterval);
+        scrollInterval = null;
+        document.title = msg;
+      }
+
+      window.addEventListener('blur', () => {
+        stopScrolling('Beni Unutma! 😢');
+      });
+
+      window.addEventListener('focus', () => {
+        startScrolling();
+      });
+
+      startScrolling();
+    </script>
+
+
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
