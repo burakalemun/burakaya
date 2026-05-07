@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Info, Globe } from 'lucide-react';
-import { FaGithub, FaApple, FaGooglePlay } from 'react-icons/fa6';
+import { FaGithub, FaApple, FaGooglePlay, FaInstagram } from 'react-icons/fa6';
 
 import { projects } from '../../data/content';
 import type { Project } from '../../data/content';
@@ -106,6 +106,11 @@ function ProjectCard({ project, index, lang, t, onClick }: {
           {project.playStore && (
             <a href={project.playStore} target="_blank" rel="noreferrer" className="project-card__link project-card__link--icon" onClick={(e) => e.stopPropagation()} aria-label="Play Store">
               <FaGooglePlay size={15} />
+            </a>
+          )}
+          {project.instagram && (
+            <a href={project.instagram} target="_blank" rel="noreferrer" className="project-card__link project-card__link--icon" onClick={(e) => e.stopPropagation()} aria-label="Instagram">
+              <FaInstagram size={15} />
             </a>
           )}
         </div>

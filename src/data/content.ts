@@ -29,9 +29,9 @@ export const personal: PersonalInfo = {
 export const stats = {
   yearsTR: '3+',
   yearsEN: '3+',
-  projects: '15+',
-  commits: '1.2k+',
-  coffee: '500+',
+  projects: '15',
+  commits: '100',
+  coffee: '∞',
 };
 
 export interface SkillCategory {
@@ -241,7 +241,7 @@ export const projects: Project[] = [
     featuresEN: ['Emoji-based Logging', 'Weekly Analysis Charts', 'Local Data Storage'],
     technicalTR: ['SwiftData Entegrasyonu', 'MVVM Mimarisi', 'AppStorage Kullanımı'],
     technicalEN: ['SwiftData Integration', 'MVVM Architecture', 'AppStorage Usage'],
-    web: 'https://burakalemun.github.io/',
+    web: 'https://moodies-amber.vercel.app/',
     appStore: 'https://apps.apple.com/',
     gradient: 'linear-gradient(135deg, #F093FB 0%, #F5576C 100%)',
     screenshots: ['/screenshots/bugun-hero.png'],

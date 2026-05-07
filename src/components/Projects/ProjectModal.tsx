@@ -126,6 +126,12 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                       <span>Play Store</span>
                     </a>
                   )}
+                  {project.instagram && (
+                    <a href={project.instagram} target="_blank" rel="noreferrer" className="modal-btn-top">
+                      <FaInstagram size={18} />
+                      <span>Instagram</span>
+                    </a>
+                  )}
                 </div>
                 
                 <button className="modal-btn-top modal-btn-close" onClick={onClose} aria-label="Close modal">
@@ -205,20 +211,12 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
 
               {/* Bottom Actions */}
-              {(project.live || project.instagram) && (
+              {project.live && (
                 <div className="modal-bottom-actions">
-                  {project.live && (
-                    <a href={project.live} target="_blank" rel="noreferrer" className="btn btn--primary modal-live-btn">
-                      <ExternalLink size={18} />
-                      <span>{lang === 'tr' ? 'Canlı Önizleme' : 'Live Preview'}</span>
-                    </a>
-                  )}
-                  {project.instagram && (
-                    <a href={project.instagram} target="_blank" rel="noreferrer" className="btn btn--primary modal-live-btn" style={{ background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)', border: 'none' }}>
-                      <FaInstagram size={18} />
-                      <span>Instagram</span>
-                    </a>
-                  )}
+                  <a href={project.live} target="_blank" rel="noreferrer" className="btn btn--primary modal-live-btn">
+                    <ExternalLink size={18} />
+                    <span>{lang === 'tr' ? 'Canlı Önizleme' : 'Live Preview'}</span>
+                  </a>
                 </div>
               )}
             </div>
